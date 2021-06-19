@@ -2,6 +2,7 @@
 #                     Modified version of ST-DBSCAN for ASF                        #   
 #                      Jun-Sik Lim, Eutteum Kim, Sun-Il Pak                        #
 #     College of Veterinary Medicine, Kangwon National University, South Korea     #
+#         For more information, https://github.com/borizook/ASF_ST_DBSCAN          #
 ####################################################################################
 
 ####################################################################################
