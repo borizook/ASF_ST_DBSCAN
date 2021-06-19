@@ -1,4 +1,5 @@
 # Modified ST-DBSCAN for ASF
+This is the modified version of ST-DBSCAN for ASF to detect the local transmission clusters.
 
 Original version of ST-DBSCAN can be found at following url:
 https://github.com/Kersauson/ST-DBSCAN/blob/master/stdbscan.R
