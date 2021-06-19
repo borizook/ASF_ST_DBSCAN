@@ -1,2 +1,3 @@
 # ASF_ST_DBSCAN
-Modified version of ST-DBSCAN for ASF in wild boars
+This is the R code for the modified version of ST-DBSCAN for ASF in wild boar
+
