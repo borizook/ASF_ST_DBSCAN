@@ -8,25 +8,18 @@ stdbscan_asf = function (x,
                          max_viab,
                          minpts, 
                          cldensity = TRUE) { 
-  
   countmode = 1:length(x)
   seeds = TRUE
   data_spatial<- as.matrix(dist(cbind(y, x)))
   pre_trans_time <- as.Date(death_time) - day_buf_death
   post_trans_time <- as.Date(report_time) + day_buf_report
-  
   n <- nrow(data_spatial)
-  
   classn <- cv <- integer(n)
   isseed <- logical(n)
   cn <- integer(1)
-  
   for (i in 1:n) {
-    
     if (i %in% countmode)
-      #cat("Processing point ", i, " of ", n, ".\n")
       unclass <- (1:n)[cv < 1]
-    
     if (cv[i] == 0) {
       spatial_reachables<- unclass[data_spatial[i, unclass] <= eps]
       duration_infect = ifelse(as.numeric(as.Date(post_trans_time[i]) - as.Date(pre_trans_time[i])) > max_viab, max_viab, as.Date(post_trans_time[i]) - as.Date(pre_trans_time[i]))
@@ -45,12 +38,9 @@ stdbscan_asf = function (x,
           cv[reachables] <- cn           
           ap <- reachables                           
           reachables <- integer()
-          
           for (i2 in seq(along = ap)) {
             j <- ap[i2]
-            
             jspatial_reachables<- unclass[data_spatial[j, unclass] <= eps]
-            
             jduration_infect = ifelse(as.numeric(as.Date(post_trans_time[j]) - as.Date(pre_trans_time[j])) > max_viab, max_viab, as.Date(post_trans_time[j]) - as.Date(pre_trans_time[j]))
             jnew_post_trans_time = as.Date(as.Date(pre_trans_time[j]) + jduration_infect)
             jreachables <- jspatial_reachables[as.Date(death_time[jspatial_reachables]) %in% c(as.Date(pre_trans_time[j]):as.Date(jnew_post_trans_time))]
@@ -67,10 +57,7 @@ stdbscan_asf = function (x,
     }
     if (!length(unclass))
       break
-    
   }
-  
-  
   if (any(cv == (-1))) {
     cv[cv == (-1)] <- 0
   }
