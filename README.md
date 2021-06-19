@@ -1,9 +1,9 @@
-Modified ST-DBSCAN for ASF
+# Modified ST-DBSCAN for ASF
 
+Original version of ST-DBSCAN can be found at following url:
+https://github.com/Kersauson/ST-DBSCAN/blob/master/stdbscan.R
 
-Birant, D., & Kut, A. (2007). ST-DBSCAN: An algorithm for clustering spatial–temporal data. Data & Knowledge Engineering, 60(1), 208-221.
-
-INPUTS :
+## INPUTS :
 traj = traj gps (x, y and time)                                      
 death_time = estimated death date                                    
 report_time = reported date                                          
@@ -13,6 +13,9 @@ eps = geographical distance threshold
 max_viab = maximum duration of transmission viability of ASFV        
 minpts = number of points to consider a cluster                      
 
-OUTPUTS :
+## OUTPUTS :
 data$cluster = cluster number
 data$cldensity = cluster points density
+
+
+
