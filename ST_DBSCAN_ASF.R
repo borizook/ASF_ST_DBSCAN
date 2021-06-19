@@ -1,25 +1,26 @@
-########################################################################
-#               Modified version of ST-DBSCAN for ASF                  #   
-#               Jun-Sik Lim, Eutteum Kim, Sun-Il Pak                   #
-#     College of Veterinary Medicine, Kangwon National University      #
-########################################################################
+########################EEEEEEEEEEEE################################################
+#                     Modified version of ST-DBSCAN for ASF                        #   
+#                      Jun-Sik Lim, Eutteum Kim, Sun-Il Pak                        #
+#     College of Veterinary Medicine, Kangwon National University, South Korea     #
+####################################################################################
 
-########################################################################
-#                   Original version of ST-DBSCAN                      #
-#     https://github.com/Kersauson/ST-DBSCAN/blob/master/stdbscan.R    #
-########################################################################
+####################################################################################
+#                         Original version of ST-DBSCAN                            #
+#           https://github.com/Kersauson/ST-DBSCAN/blob/master/stdbscan.R          #
+####################################################################################
 
-########################################################################
-# INPUTS :                                                             #
-# traj = traj gps (x, y and time)                                      #
-# death_time = estimated death date                                    #
-# report_time = reported date                                          #
-# day_buf_death = temporal buffer adding to the death date             #
-# day_buf_report = temporal buffer adding to the report date           #
-# eps = geographical distance threshold                                #
-# max_viab = maximum duration of transmission viability of ASFV        #
-# minpts = number of points to consider a cluster                      #
-########################################################################
+####################################################################################
+# INPUTS :                                                                         #
+# x = longitude                                                                    #
+# y = latitude                                                                     #
+# death_time = estimated death date                                                #
+# report_time = reported date                                                      #
+# day_buf_death = temporal buffer adding to the death date                         #
+# day_buf_report = temporal buffer adding to the report date                       #
+# eps = geographical distance threshold                                            #
+# max_viab = maximum duration of transmission viability of ASFV                    #
+# minpts = number of points to consider a cluster                                  #
+####################################################################################
 
 stdbscan_asf = function (x, 
                          y, 
