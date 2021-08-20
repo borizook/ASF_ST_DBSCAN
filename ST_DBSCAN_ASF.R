@@ -6,7 +6,7 @@
 ####################################################################################
 
 ####################################################################################
-#  The research paper for R0 of ASF in South Korea  can be found at following url: #
+#  The research paper for R0 of ASF in South Korea can be found at following url:  #
 #              https://www.vetsci.org/DOIx.php?id=10.4142/jvs.2021.22.e71          #
 ####################################################################################
 
