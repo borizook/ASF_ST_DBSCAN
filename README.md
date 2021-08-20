@@ -1,8 +1,8 @@
 # Modified ST-DBSCAN for African swine fever in South Korea
 This is the modified version of ST-DBSCAN for African swine fever in wild boars to detect the local transmission clusters.
 
-Original version of ST-DBSCAN can be found at following url:
-https://github.com/Kersauson/ST-DBSCAN/blob/master/stdbscan.R
+The research paper for R0 of ASF in South Korea  can be found at following url:
+https://www.vetsci.org/DOIx.php?id=10.4142/jvs.2021.22.e71   
 
 ## INPUTS :
  x = longitude                                                                    
